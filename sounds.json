@@ -1,175 +1,175 @@
 {
   "wow": {
-    "files": [{"glob": "sounds/wow*.opus"}]
+    "files": [{"glob": "wow*.opus"}]
   },
   "death": {
-    "files": [{"glob": "sounds/legostarwarsdeath-*.opus"}]
+    "files": [{"glob": "legostarwarsdeath-*.opus"}]
   },
   "awman": {
     "aliases": ["creeper", "awwman", "awwwman", "awwwwman"],
-    "files": [{"filename": "sounds/revenge-awman.opus"}]
+    "files": [{"filename": "revenge-awman.opus"}]
   },
   "doit": {
-    "files": [{"filename": "sounds/starwars-doit.opus"}]
+    "files": [{"filename": "starwars-doit.opus"}]
   },
   "survival": {
-    "files": [{"filename": "sounds/michaelrosen-survival.opus"}]
+    "files": [{"filename": "michaelrosen-survival.opus"}]
   },
   "nice": {
-    "files": [{"glob": "sounds/michaelrosen-nice-*.opus"}]
+    "files": [{"glob": "michaelrosen-nice-*.opus"}]
   },
   "bitesthedust": {
     "aliases": ["anotherone", "bitethedust", "bitthedust", "anotheronebitesthedust"],
-    "files": [{"filename": "sounds/queen-bitesthedust.opus"}]
+    "files": [{"filename": "queen-bitesthedust.opus"}]
   },
   "word": {
-    "files": [{"filename": "sounds/word-ding.opus"}]
+    "files": [{"filename": "word-ding.opus"}]
   },
   "vergeofgreatness": {
     "aliases": ["verge", "vergegreatness", "thisclose"],
-    "files": [{"filename": "sounds/verge-of-greatness.opus"}]
+    "files": [{"filename": "verge-of-greatness.opus"}]
   },
   "vsauce": {
     "aliases": ["heyvsauce"],
-    "files": [{"filename": "sounds/vsauce-music.opus"}]
+    "files": [{"filename": "vsauce-music.opus"}]
   },
   "vsauce+": {
     "aliases": ["vsauce2", "heyvsauce+", "vsauceext", "vsaucext"],
-    "files": [{"filename": "sounds/vsauce-music-extended.opus"}]
+    "files": [{"filename": "vsauce-music-extended.opus"}]
   },
   "wait": {
     "aliases": ["waituhoh", "wuhoh"],
-    "files": [{"filename": "sounds/Wait Uh Oh.opus"}]
+    "files": [{"filename": "Wait Uh Oh.opus"}]
   },
   "uhoh": {
     "aliases": ["uh-oh", "uoh"],
-    "files": [{"filename": "sounds/Uh Oh.opus"}]
+    "files": [{"filename": "Uh Oh.opus"}]
   },
   "toofar": {
     "aliases": ["gonetoofar"],
-    "files": [{"filename": "sounds/Too Far.opus"}]
+    "files": [{"filename": "Too Far.opus"}]
   },
   "a": {
-    "files": [{"filename": "sounds/a.opus"}],
+    "files": [{"filename": "a.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "guh": {
     "files": [
-      {"glob": "sounds/guh-*.opus", "weight": 24},
-      {"glob": "sounds/guhk-*.opus", "weight": 1}
+      {"glob": "guh-*.opus", "weight": 24},
+      {"glob": "guhk-*.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
   },
   "hic": {
-    "files": [{"glob": "sounds/hic-*.opus"}],
+    "files": [{"glob": "hic-*.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "ohimdie": {
     "aliases": ["ohimdiethankyouforever", "thankyouforever"],
-    "files": [{"filename": "sounds/oh im die thank you forever.opus"}],
+    "files": [{"filename": "oh im die thank you forever.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "how": {
     "aliases": ["what", "how?", "what?", "earthbound"],
-    "files": [{"filename": "sounds/earthbound-how.opus"}]
+    "files": [{"filename": "earthbound-how.opus"}]
   },
   "iapprove": {
     "aliases": ["approve"],
-    "files": [{"glob": "sounds/iapprove-*.opus"}],
+    "files": [{"glob": "iapprove-*.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "imhorny": {
     "aliases": ["horny", "i'mhorny"],
     "files": [
-      {"glob": "sounds/imhorny-01.opus", "weight": 15},
-      {"glob": "sounds/imhorny-02.opus", "weight": 9},
-      {"glob": "sounds/imhorny-ame.opus", "weight": 1}
+      {"glob": "imhorny-01.opus", "weight": 15},
+      {"glob": "imhorny-02.opus", "weight": 9},
+      {"glob": "imhorny-ame.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
   },
   "wegothim": {
     "aliases": ["wegottem", "wegotem", "gotem", "gottem", "gothim", "ladiesandgentlemen", "ladiesandgentlemenwegothim", "ladiesandgentlemenwegotten"],
-    "files": [{"filename": "sounds/ladies and gentlemen we got him.opus"}]
+    "files": [{"filename": "ladies and gentlemen we got him.opus"}]
   },
   "assaultontheears": {
     "aliases": ["assault", "earassault"],
-    "files": [{"filename": "sounds/assault.opus"}]
+    "files": [{"filename": "assault.opus"}]
   },
   "dontgetit": {
     "aliases": ["don'tgetit", "idontgetit", "idon'tgetit"],
-    "files": [{"filename": "sounds/dontgetit.opus"}]
+    "files": [{"filename": "dontgetit.opus"}]
   },
   "nope": {
     "aliases": ["no", "koronenope", "koroneno"],
     "files": [
-      {"glob": "sounds/korone-nope*.opus", "weight": 14},
-      {"filename": "sounds/korone-nononononope.opus", "weight": 1}
+      {"glob": "korone-nope*.opus", "weight": 14},
+      {"filename": "korone-nononononope.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
   },
   "yes": {
     "aliases": ["myes", "mmyes", "mmmyes", "koroneyes"],
-    "files": [{"filename": "sounds/korone-mmyes.opus"}],
+    "files": [{"filename": "korone-mmyes.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "sure": {
     "aliases": ["koronesure"],
-    "files": [{"filename": "sounds/korone-sure.opus"}],
+    "files": [{"filename": "korone-sure.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "impostor": {
     "aliases": ["sus", "amongus", "impostoramongus"],
-    "files": [{"filename": "sounds/amongus-rolereveal.opus"}]
+    "files": [{"filename": "amongus-rolereveal.opus"}]
   },
   "whymad": {
     "aliases": ["mad", "whyyouhavetobemad", "whyyoumad"],
-    "files": [{"filename": "sounds/why-mad.opus"}]
+    "files": [{"filename": "why-mad.opus"}]
   },
   "isonlygame": {
     "aliases": ["onlygame", "game", "isonlygamewhymad"],
-    "files": [{"filename": "sounds/why-mad-only-game.opus"}]
+    "files": [{"filename": "why-mad-only-game.opus"}]
   },
   "wrong": {
     "aliases": ["you'rewrong", "yourewrong", "yourwrong"],
-    "files": [{"filename": "sounds/wrong.opus"}]
+    "files": [{"filename": "wrong.opus"}]
   },
   "wrongandugly": {
     "aliases": ["wrong&ugly", "ugly", "you'rewrongandugly", "yourewrongandugly", "yourwrongandugly"],
     "files": [
-      {"filename": "sounds/wrong-ugly.opus", "weight": 4},
-      {"filename": "sounds/wrong-ugly-thanks.opus", "weight": 1}
+      {"filename": "wrong-ugly.opus", "weight": 4},
+      {"filename": "wrong-ugly-thanks.opus", "weight": 1}
     ]
   },
   "gottabounce": {
     "aliases": ["anywaysmybroskis", "anywaymybroskis", "anywaysbroskis", "anywaybroskis", "igottabounce", "bounce"],
-    "files": [{"filename": "sounds/anyway broskis gotta bounce.opus"}]
+    "files": [{"filename": "anyway broskis gotta bounce.opus"}]
   },
   "fbiopenup": {
     "aliases": ["fbi", "openup"],
-    "files": [{"filename": "sounds/fbi open up.opus"}]
+    "files": [{"filename": "fbi open up.opus"}]
   },
   "yabe": {
     "aliases": ["ya-be"],
-    "files": [{"filename": "sounds/yabe.opus"}],
+    "files": [{"filename": "yabe.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "congration": {
     "aliases": ["congratulation"],
-    "files": [{"filename": "sounds/congration.opus"}]
+    "files": [{"filename": "congration.opus"}]
   },
   "stfuamericans": {
     "aliases": ["americans", "american", "stfu"],
-    "files": [{"filename": "sounds/stfu-americans.opus"}]
+    "files": [{"filename": "stfu-americans.opus"}]
   },
   "die": {
-    "files": [{"filename": "sounds/korone-die.opus"}],
+    "files": [{"filename": "korone-die.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "youaredie": {
     "files": [
-      {"filename": "sounds/korone-youaredie-1.opus", "weight": 5},
-      {"filename": "sounds/korone-youaredie-2.opus", "weight": 4},
-      {"filename": "sounds/korone-youaredie-die-die.opus", "weight": 1}
+      {"filename": "korone-youaredie-1.opus", "weight": 5},
+      {"filename": "korone-youaredie-2.opus", "weight": 4},
+      {"filename": "korone-youaredie-die-die.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
   }
