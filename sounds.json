@@ -1,6 +1,6 @@
 {
   "wow": {
-    "files": [{"glob": "wow*.opus"}]
+    "files": [{"glob": "wow/wow-*.opus"}]
   },
   "death": {
     "files": [{"glob": "legostarwarsdeath-*.opus"}]
