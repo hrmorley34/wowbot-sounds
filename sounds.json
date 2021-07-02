@@ -3,93 +3,93 @@
     "files": [{"glob": "wow/wow-*.opus"}]
   },
   "death": {
-    "files": [{"glob": "legostarwarsdeath-*.opus"}]
+    "files": [{"glob": "starwars/legostarwarsdeath-*.opus"}]
   },
   "awman": {
     "aliases": ["creeper", "awwman", "awwwman", "awwwwman"],
-    "files": [{"filename": "revenge-awman.opus"}]
+    "files": [{"filename": "music/revenge-awman.opus"}]
   },
   "doit": {
-    "files": [{"filename": "starwars-doit.opus"}]
+    "files": [{"filename": "starwars/doit.opus"}]
   },
   "survival": {
-    "files": [{"filename": "michaelrosen-survival.opus"}]
+    "files": [{"filename": "michaelrosen/survival.opus"}]
   },
   "nice": {
-    "files": [{"glob": "michaelrosen-nice-*.opus"}]
+    "files": [{"glob": "michaelrosen/nice-*.opus"}]
   },
   "bitesthedust": {
     "aliases": ["anotherone", "bitethedust", "bitthedust", "anotheronebitesthedust"],
-    "files": [{"filename": "queen-bitesthedust.opus"}]
+    "files": [{"filename": "music/queen-bitesthedust.opus"}]
   },
   "word": {
     "files": [{"filename": "word-ding.opus"}]
   },
   "vergeofgreatness": {
     "aliases": ["verge", "vergegreatness", "thisclose"],
-    "files": [{"filename": "verge-of-greatness.opus"}]
+    "files": [{"filename": "starwars/verge-of-greatness.opus"}]
   },
   "vsauce": {
     "aliases": ["heyvsauce"],
-    "files": [{"filename": "vsauce-music.opus"}]
+    "files": [{"filename": "music/vsauce-music.opus"}]
   },
   "vsauce+": {
     "aliases": ["vsauce2", "heyvsauce+", "vsauceext", "vsaucext"],
-    "files": [{"filename": "vsauce-music-extended.opus"}]
+    "files": [{"filename": "music/vsauce-music-extended.opus"}]
   },
   "wait": {
     "aliases": ["waituhoh", "wuhoh"],
-    "files": [{"filename": "Wait Uh Oh.opus"}]
+    "files": [{"filename": "wait-uh-oh.opus"}]
   },
   "uhoh": {
     "aliases": ["uh-oh", "uoh"],
-    "files": [{"filename": "Uh Oh.opus"}]
+    "files": [{"filename": "uh-oh.opus"}]
   },
   "toofar": {
     "aliases": ["gonetoofar"],
-    "files": [{"filename": "Too Far.opus"}]
+    "files": [{"filename": "starwars/too-far.opus"}]
   },
   "a": {
-    "files": [{"filename": "a.opus"}],
+    "files": [{"filename": "holo/a.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "guh": {
     "files": [
-      {"glob": "guh-*.opus", "weight": 24},
-      {"glob": "guhk-*.opus", "weight": 1}
+      {"glob": "holo/guh/guh-*.opus", "weight": 24},
+      {"glob": "holo/guh/guhk-*.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
   },
   "hic": {
-    "files": [{"glob": "hic-*.opus"}],
+    "files": [{"glob": "holo/hic/hic-*.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "ohimdie": {
     "aliases": ["ohimdiethankyouforever", "thankyouforever"],
-    "files": [{"filename": "oh im die thank you forever.opus"}],
+    "files": [{"filename": "holo/korone/oh-im-die-thank-you-forever.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "how": {
     "aliases": ["what", "how?", "what?", "earthbound"],
-    "files": [{"filename": "earthbound-how.opus"}]
+    "files": [{"filename": "music/earthbound-how.opus"}]
   },
   "iapprove": {
     "aliases": ["approve"],
-    "files": [{"glob": "iapprove-*.opus"}],
+    "files": [{"glob": "holo/iapprove-*.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "imhorny": {
     "aliases": ["horny", "i'mhorny"],
     "files": [
-      {"glob": "imhorny-01.opus", "weight": 15},
-      {"glob": "imhorny-02.opus", "weight": 9},
-      {"glob": "imhorny-ame.opus", "weight": 1}
+      {"glob": "holo/imhorny-01.opus", "weight": 15},
+      {"glob": "holo/imhorny-02.opus", "weight": 9},
+      {"glob": "holo/imhorny-ame.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
   },
   "wegothim": {
     "aliases": ["wegottem", "wegotem", "gotem", "gottem", "gothim", "ladiesandgentlemen", "ladiesandgentlemenwegothim", "ladiesandgentlemenwegotten"],
-    "files": [{"filename": "ladies and gentlemen we got him.opus"}]
+    "files": [{"filename": "music/we-got-him.opus"}]
   },
   "assaultontheears": {
     "aliases": ["assault", "earassault"],
@@ -102,19 +102,19 @@
   "nope": {
     "aliases": ["no", "koronenope", "koroneno"],
     "files": [
-      {"glob": "korone-nope*.opus", "weight": 14},
-      {"filename": "korone-nononononope.opus", "weight": 1}
+      {"glob": "holo/korone/nope-*.opus", "weight": 14},
+      {"filename": "holo/korone/nononononope.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
   },
   "yes": {
     "aliases": ["myes", "mmyes", "mmmyes", "koroneyes"],
-    "files": [{"filename": "korone-mmyes.opus"}],
+    "files": [{"filename": "holo/korone/mmyes.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "sure": {
     "aliases": ["koronesure"],
-    "files": [{"filename": "korone-sure.opus"}],
+    "files": [{"filename": "holo/korone/sure.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "impostor": {
@@ -142,15 +142,15 @@
   },
   "gottabounce": {
     "aliases": ["anywaysmybroskis", "anywaymybroskis", "anywaysbroskis", "anywaybroskis", "igottabounce", "bounce"],
-    "files": [{"filename": "anyway broskis gotta bounce.opus"}]
+    "files": [{"filename": "anyways-broskis-i-gotta-bounce.opus"}]
   },
   "fbiopenup": {
     "aliases": ["fbi", "openup"],
-    "files": [{"filename": "fbi open up.opus"}]
+    "files": [{"filename": "fbi-open-up.opus"}]
   },
   "yabe": {
     "aliases": ["ya-be"],
-    "files": [{"filename": "yabe.opus"}],
+    "files": [{"filename": "holo/yabe.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "congration": {
@@ -162,14 +162,14 @@
     "files": [{"filename": "stfu-americans.opus"}]
   },
   "die": {
-    "files": [{"filename": "korone-die.opus"}],
+    "files": [{"filename": "holo/korone/die.opus"}],
     "commandkwargs": {"hidden": true}
   },
   "youaredie": {
     "files": [
-      {"filename": "korone-youaredie-1.opus", "weight": 5},
-      {"filename": "korone-youaredie-2.opus", "weight": 4},
-      {"filename": "korone-youaredie-die-die.opus", "weight": 1}
+      {"filename": "holo/korone/youaredie-1.opus", "weight": 5},
+      {"filename": "holo/korone/youaredie-2.opus", "weight": 4},
+      {"filename": "holo/korone/youaredie-die-die.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
   }
