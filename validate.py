@@ -71,3 +71,5 @@ if problems > 1:
     raise Exception(f"{problems} issues found.")
 elif problems == 1:
     raise Exception("1 issue found.")
+else:
+    print("All good :)")
