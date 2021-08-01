@@ -172,5 +172,9 @@
       {"filename": "holo/korone/youaredie-die-die.opus", "weight": 1}
     ],
     "commandkwargs": {"hidden": true}
+  },
+  "bonk": {
+    "aliases": [],
+    "files": [{"filename": "bonk.opus"}]
   }
 }
