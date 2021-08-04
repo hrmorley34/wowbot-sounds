@@ -176,5 +176,11 @@
   "bonk": {
     "aliases": [],
     "files": [{"filename": "bonk.opus"}]
+  },
+  "f": {
+    "files": [
+      {"filename": "holo/korone/f.opus"}
+    ],
+    "commandkwargs": {"hidden": true}
   }
 }
