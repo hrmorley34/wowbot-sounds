@@ -3,14 +3,16 @@
     "files": [{"glob": "wow/wow-*.opus"}]
   },
   "death": {
-    "files": [{"glob": "starwars/legostarwarsdeath-*.opus"}]
+    "files": [{"glob": "starwars/legostarwarsdeath-*.opus"}],
+    "slash_group": "s"
   },
   "awman": {
     "aliases": ["creeper", "awwman", "awwwman", "awwwwman"],
     "files": [{"filename": "music/revenge-awman.opus"}]
   },
   "doit": {
-    "files": [{"filename": "starwars/doit.opus"}]
+    "files": [{"filename": "starwars/doit.opus"}],
+    "slash_group": "s"
   },
   "survival": {
     "files": [{"filename": "michaelrosen/survival.opus"}]
@@ -27,15 +29,20 @@
   },
   "vergeofgreatness": {
     "aliases": ["verge", "vergegreatness", "thisclose"],
-    "files": [{"filename": "starwars/verge-of-greatness.opus"}]
+    "files": [{"filename": "starwars/verge-of-greatness.opus"}],
+    "slash_group": "s"
   },
   "vsauce": {
     "aliases": ["heyvsauce"],
-    "files": [{"filename": "music/vsauce-music.opus"}]
+    "files": [{"filename": "music/vsauce-music.opus"}],
+    "slash_group": "vsauce",
+    "slash_name": "normal"
   },
   "vsauce+": {
     "aliases": ["vsauce2", "heyvsauce+", "vsauceext", "vsaucext"],
-    "files": [{"filename": "music/vsauce-music-extended.opus"}]
+    "files": [{"filename": "music/vsauce-music-extended.opus"}],
+    "slash_group": "vsauce",
+    "slash_name": "extended"
   },
   "wait": {
     "aliases": ["waituhoh", "wuhoh"],
@@ -47,27 +54,28 @@
   },
   "toofar": {
     "aliases": ["gonetoofar"],
-    "files": [{"filename": "starwars/too-far.opus"}]
+    "files": [{"filename": "starwars/too-far.opus"}],
+    "slash_group": "s"
   },
   "a": {
     "files": [{"filename": "holo/a.opus"}],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "h"
   },
   "guh": {
     "files": [
       {"glob": "holo/guh/guh-*.opus", "weight": 24},
       {"glob": "holo/guh/guhk-*.opus", "weight": 1}
     ],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "h"
   },
   "hic": {
     "files": [{"glob": "holo/hic/hic-*.opus"}],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "h"
   },
   "ohimdie": {
     "aliases": ["ohimdiethankyouforever", "thankyouforever"],
     "files": [{"filename": "holo/korone/oh-im-die-thank-you-forever.opus"}],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "k"
   },
   "how": {
     "aliases": ["what", "how?", "what?", "earthbound"],
@@ -76,7 +84,7 @@
   "iapprove": {
     "aliases": ["approve"],
     "files": [{"glob": "holo/iapprove-*.opus"}],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "h"
   },
   "imhorny": {
     "aliases": ["horny", "i'mhorny"],
@@ -85,7 +93,7 @@
       {"glob": "holo/imhorny-02.opus", "weight": 9},
       {"glob": "holo/imhorny-ame.opus", "weight": 1}
     ],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "h"
   },
   "wegothim": {
     "aliases": ["wegottem", "wegotem", "gotem", "gottem", "gothim", "ladiesandgentlemen", "ladiesandgentlemenwegothim", "ladiesandgentlemenwegotten"],
@@ -105,17 +113,17 @@
       {"glob": "holo/korone/nope-*.opus", "weight": 14},
       {"filename": "holo/korone/nononononope.opus", "weight": 1}
     ],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "k"
   },
   "yes": {
     "aliases": ["myes", "mmyes", "mmmyes", "koroneyes"],
     "files": [{"filename": "holo/korone/mmyes.opus"}],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "k"
   },
   "sure": {
     "aliases": ["koronesure"],
     "files": [{"filename": "holo/korone/sure.opus"}],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "k"
   },
   "impostor": {
     "aliases": ["sus", "amongus", "impostoramongus"],
@@ -151,7 +159,7 @@
   "yabe": {
     "aliases": ["ya-be"],
     "files": [{"filename": "holo/yabe.opus"}],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "h"
   },
   "congration": {
     "aliases": ["congratulation"],
@@ -163,7 +171,7 @@
   },
   "die": {
     "files": [{"filename": "holo/korone/die.opus"}],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "k"
   },
   "youaredie": {
     "files": [
@@ -171,7 +179,7 @@
       {"filename": "holo/korone/youaredie-2.opus", "weight": 4},
       {"filename": "holo/korone/youaredie-die-die.opus", "weight": 1}
     ],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "k"
   },
   "bonk": {
     "aliases": [],
@@ -181,6 +189,6 @@
     "files": [
       {"filename": "holo/korone/f.opus"}
     ],
-    "commandkwargs": {"hidden": true}
+    "slash_group": "k"
   }
 }
