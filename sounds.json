@@ -78,7 +78,7 @@
     "slash_group": "k"
   },
   "how": {
-    "aliases": ["what", "how?", "what?", "earthbound"],
+    "aliases": ["how?", "earthbound"],
     "files": [{"filename": "music/earthbound-how.opus"}]
   },
   "iapprove": {
@@ -190,5 +190,24 @@
       {"filename": "holo/korone/f.opus"}
     ],
     "slash_group": "k"
+  },
+  "bruh": {
+    "aliases": ["bruh2"],
+    "files": [
+      {"filename": "bruh-sound-effect-2.opus"}
+    ]
+  },
+  "laugh": {
+    "aliases": ["laughtrack", "laughter", "funny", "funy"],
+    "files": [
+      {"filename": "laughtrack.opus"}
+    ]
+  },
+  "what": {
+    "aliases": ["what?", "wtf", "wtf?", "what-wtf"],
+    "files": [
+      {"filename": "what.opus", "weight": 1},
+      {"filename": "what-wtf.opus", "weight": 5}
+    ]
   }
 }
