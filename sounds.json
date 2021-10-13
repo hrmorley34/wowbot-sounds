@@ -209,5 +209,9 @@
       {"filename": "what.opus", "weight": 1},
       {"filename": "what-wtf.opus", "weight": 5}
     ]
+  },
+  "cyberpunk": {
+    "aliases": ["cum", "cyberpunk2077", "2077"],
+    "files": [{"filename": "music/cyberpunk-spoiler.opus"}]
   }
 }
