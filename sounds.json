@@ -213,5 +213,9 @@
   "cyberpunk": {
     "aliases": ["cum", "cyberpunk2077", "2077"],
     "files": [{"filename": "music/cyberpunk-spoiler.opus"}]
+  },
+  "ultrainstinct": {
+    "aliases": ["dbz", "ultra-instinct", "ultrainstincttheme"],
+    "files": [{"filename": "music/ultra-instinct-theme.opus"}]
   }
 }
