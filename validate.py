@@ -23,6 +23,7 @@ def parse_file() -> Tuple[int, MutableMapping[str, Set[str]], MutableMapping[Pat
         used_names[name].add(name)
 
         files: Sequence[Mapping[str, str]] = data["files"]
+        filepaths: list[Path] = []
 
         for filespec in files:
             if "glob" in filespec:
@@ -32,6 +33,7 @@ def parse_file() -> Tuple[int, MutableMapping[str, Set[str]], MutableMapping[Pat
                     problems += 1
                 for p in paths:
                     used_files[p].add(name)
+                    filepaths.append(p)
 
             if "filenames" in filespec:
                 if not filespec["filenames"]:
@@ -42,6 +44,7 @@ def parse_file() -> Tuple[int, MutableMapping[str, Set[str]], MutableMapping[Pat
                         print(f"Non-existant path in list in {name}: {path}")
                         problems += 1
                     used_files[fullpath].add(name)
+                    filepaths.append(fullpath)
 
             if "filename" in filespec:
                 # sounds_dir / example.opus
@@ -50,9 +53,14 @@ def parse_file() -> Tuple[int, MutableMapping[str, Set[str]], MutableMapping[Pat
                     print(f"Non-existant path in {name}: {filespec['filename']}")
                     problems += 1
                 used_files[path].add(name)
+                filepaths.append(path)
 
         for alias in data.get("aliases", []):
             used_names[str(alias)].add(name)
+
+        if not filepaths:
+            print(f"No files for {name}")
+            problems += 1
 
     return problems, used_names, used_files
 
