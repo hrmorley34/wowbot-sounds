@@ -1,0 +1,153 @@
+{
+  "": {
+    "wow": {
+      "sound": "wow"
+    },
+    "awman": {
+      "sound": "awman"
+    },
+    "survival": {
+      "sound": "survival"
+    },
+    "nice": {
+      "sound": "nice"
+    },
+    "bitesthedust": {
+      "sound": "bitesthedust"
+    },
+    "word": {
+      "sound": "word"
+    },
+    "vsauce": {
+      "options": {
+        "short": {
+          "sound": "vsauce"
+        },
+        "extended": {
+          "sound": "vsauce+"
+        }
+      },
+      "default": "short"
+    },
+    "wait": {
+      "sound": "wait"
+    },
+    "uhoh": {
+      "sound": "uhoh"
+    },
+    "how": {
+      "sound": "how"
+    },
+    "wegothim": {
+      "sound": "wegothim"
+    },
+    "assaultontheears": {
+      "sound": "assaultontheears"
+    },
+    "dontgetit": {
+      "sound": "dontgetit"
+    },
+    "impostor": {
+      "sound": "impostor"
+    },
+    "whymad": {
+      "sound": "whymad"
+    },
+    "isonlygame": {
+      "sound": "isonlygame"
+    },
+    "wrong": {
+      "sound": "wrong"
+    },
+    "wrongandugly": {
+      "sound": "wrongandugly"
+    },
+    "gottabounce": {
+      "sound": "gottabounce"
+    },
+    "fbiopenup": {
+      "sound": "fbiopenup"
+    },
+    "congration": {
+      "sound": "congration"
+    },
+    "stfuamericans": {
+      "sound": "stfuamericans"
+    },
+    "bonk": {
+      "sound": "bonk"
+    },
+    "bruh": {
+      "sound": "bruh"
+    },
+    "laugh": {
+      "sound": "laugh"
+    },
+    "what": {
+      "sound": "what"
+    },
+    "cyberpunk": {
+      "sound": "cyberpunk"
+    },
+    "ultrainstinct": {
+      "sound": "ultrainstinct"
+    }
+  },
+  "s": {
+    "death": {
+      "sound": "death"
+    },
+    "doit": {
+      "sound": "doit"
+    },
+    "vergeofgreatness": {
+      "sound": "vergeofgreatness"
+    },
+    "toofar": {
+      "sound": "toofar"
+    }
+  },
+  "h": {
+    "a": {
+      "sound": "a"
+    },
+    "guh": {
+      "sound": "guh"
+    },
+    "hic": {
+      "sound": "hic"
+    },
+    "iapprove": {
+      "sound": "iapprove"
+    },
+    "imhorny": {
+      "sound": "imhorny"
+    },
+    "yabe": {
+      "sound": "yabe"
+    }
+  },
+  "k": {
+    "ohimdie": {
+      "sound": "ohimdie"
+    },
+    "nope": {
+      "sound": "nope"
+    },
+    "yes": {
+      "sound": "yes"
+    },
+    "sure": {
+      "sound": "sure"
+    },
+    "die": {
+      "sound": "die"
+    },
+    "youaredie": {
+      "sound": "youaredie"
+    },
+    "f": {
+      "sound": "f"
+    }
+  }
+}

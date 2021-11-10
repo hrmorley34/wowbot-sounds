@@ -1,0 +1,148 @@
+{
+    "wow": {"sound": "wow"},
+    "death": {"sound": "death"},
+    "awman": {
+      "aliases": ["creeper", "awwman", "awwwman", "awwwwman"],
+      "sound": "awman"
+    },
+    "doit": {"sound": "doit"},
+    "survival": {"sound": "survival"},
+    "nice": {"sound": "nice"},
+    "bitesthedust": {
+      "aliases": ["anotherone", "bitethedust", "bitthedust", "anotheronebitesthedust"],
+      "sound": "bitesthedust"
+    },
+    "word": {"sound": "word"},
+    "vergeofgreatness": {
+      "aliases": ["verge", "vergegreatness", "thisclose"],
+      "sound": "vergeofgreatness"
+    },
+    "vsauce": {
+      "aliases": ["heyvsauce"],
+      "sound": "vsauce"
+    },
+    "vsauce+": {
+      "aliases": ["vsauce2", "heyvsauce+", "vsauceext", "vsaucext"],
+      "sound": "vsauce+"
+    },
+    "wait": {
+      "aliases": ["waituhoh", "wuhoh"],
+      "sound": "wait"
+    },
+    "uhoh": {
+      "aliases": ["uh-oh", "uoh"],
+      "sound": "uhoh"
+    },
+    "toofar": {
+      "aliases": ["gonetoofar"],
+      "sound": "toofar"
+    },
+    "a": {"sound": "a"},
+    "guh": {"sound": "guh"},
+    "hic": {"sound": "hic"},
+    "ohimdie": {
+      "aliases": ["ohimdiethankyouforever", "thankyouforever"],
+      "sound": "ohimdie"
+    },
+    "how": {
+      "aliases": ["how?", "earthbound"],
+      "sound": "how"
+    },
+    "iapprove": {
+      "aliases": ["approve"],
+      "sound": "iapprove"
+    },
+    "imhorny": {
+      "aliases": ["horny", "i'mhorny"],
+      "sound": "imhorny"
+    },
+    "wegothim": {
+      "aliases": ["wegottem", "wegotem", "gotem", "gottem", "gothim", "ladiesandgentlemen", "ladiesandgentlemenwegothim", "ladiesandgentlemenwegotten"],
+      "sound": "wegothim"
+    },
+    "assaultontheears": {
+      "aliases": ["assault", "earassault"],
+      "sound": "assaultontheears"
+    },
+    "dontgetit": {
+      "aliases": ["don'tgetit", "idontgetit", "idon'tgetit"],
+      "sound": "dontgetit"
+    },
+    "nope": {
+      "aliases": ["no", "koronenope", "koroneno"],
+      "sound": "nope"
+    },
+    "yes": {
+      "aliases": ["myes", "mmyes", "mmmyes", "koroneyes"],
+      "sound": "yes"
+    },
+    "sure": {
+      "aliases": ["koronesure"],
+      "sound": "sure"
+    },
+    "impostor": {
+      "aliases": ["sus", "amongus", "impostoramongus"],
+      "sound": "impostor"
+    },
+    "whymad": {
+      "aliases": ["mad", "whyyouhavetobemad", "whyyoumad"],
+      "sound": "whymad"
+    },
+    "isonlygame": {
+      "aliases": ["onlygame", "game", "isonlygamewhymad"],
+      "sound": "isonlygame"
+    },
+    "wrong": {
+      "aliases": ["you'rewrong", "yourewrong", "yourwrong"],
+      "sound": "wrong"
+    },
+    "wrongandugly": {
+      "aliases": ["wrong&ugly", "ugly", "you'rewrongandugly", "yourewrongandugly", "yourwrongandugly"],
+      "sound": "wrongandugly"
+    },
+    "gottabounce": {
+      "aliases": ["anywaysmybroskis", "anywaymybroskis", "anywaysbroskis", "anywaybroskis", "igottabounce", "bounce"],
+      "sound": "gottabounce"
+    },
+    "fbiopenup": {
+      "aliases": ["fbi", "openup"],
+      "sound": "fbiopenup"
+    },
+    "yabe": {
+      "aliases": ["ya-be"],
+      "sound": "yabe"
+    },
+    "congration": {
+      "aliases": ["congratulation"],
+      "sound": "congration"
+    },
+    "stfuamericans": {
+      "aliases": ["americans", "american", "stfu"],
+      "sound": "stfuamericans"
+    },
+    "die": {"sound": "die"},
+    "youaredie": {"sound": "youaredie"},
+    "bonk": {"sound": "bonk"},
+    "f": {"sound": "f"},
+    "bruh": {
+      "aliases": ["bruh2"],
+      "sound": "bruh"
+    },
+    "laugh": {
+      "aliases": ["laughtrack", "laughter", "funny", "funy"],
+      "sound": "laugh"
+    },
+    "what": {
+      "aliases": ["what?", "wtf", "wtf?", "what-wtf"],
+      "sound": "what"
+    },
+    "cyberpunk": {
+      "aliases": ["cum", "cyberpunk2077", "2077"],
+      "sound": "cyberpunk"
+    },
+    "ultrainstinct": {
+      "aliases": ["dbz", "ultra-instinct", "ultrainstincttheme"],
+      "sound": "ultrainstinct"
+    }
+  }
+  

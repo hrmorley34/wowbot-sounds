@@ -1,221 +1,68 @@
 {
-  "wow": {
-    "files": [{"glob": "audio/wow/wow-*.opus"}]
-  },
-  "death": {
-    "files": [{"glob": "audio/starwars/legostarwarsdeath-*.opus"}],
-    "slash_group": "s"
-  },
-  "awman": {
-    "aliases": ["creeper", "awwman", "awwwman", "awwwwman"],
-    "files": [{"filename": "audio/music/revenge-awman.opus"}]
-  },
-  "doit": {
-    "files": [{"filename": "audio/starwars/doit.opus"}],
-    "slash_group": "s"
-  },
-  "survival": {
-    "files": [{"filename": "audio/michaelrosen/survival.opus"}]
-  },
-  "nice": {
-    "files": [{"glob": "audio/michaelrosen/nice-*.opus"}]
-  },
-  "bitesthedust": {
-    "aliases": ["anotherone", "bitethedust", "bitthedust", "anotheronebitesthedust"],
-    "files": [{"filename": "audio/music/queen-bitesthedust.opus"}]
-  },
-  "word": {
-    "files": [{"filename": "audio/word-ding.opus"}]
-  },
-  "vergeofgreatness": {
-    "aliases": ["verge", "vergegreatness", "thisclose"],
-    "files": [{"filename": "audio/starwars/verge-of-greatness.opus"}],
-    "slash_group": "s"
-  },
-  "vsauce": {
-    "aliases": ["heyvsauce"],
-    "files": [{"filename": "audio/music/vsauce-music.opus"}],
-    "slash_group": "vsauce",
-    "slash_name": "normal"
-  },
-  "vsauce+": {
-    "aliases": ["vsauce2", "heyvsauce+", "vsauceext", "vsaucext"],
-    "files": [{"filename": "audio/music/vsauce-music-extended.opus"}],
-    "slash_group": "vsauce",
-    "slash_name": "extended"
-  },
-  "wait": {
-    "aliases": ["waituhoh", "wuhoh"],
-    "files": [{"filename": "audio/wait-uh-oh.opus"}]
-  },
-  "uhoh": {
-    "aliases": ["uh-oh", "uoh"],
-    "files": [{"filename": "audio/uh-oh.opus"}]
-  },
-  "toofar": {
-    "aliases": ["gonetoofar"],
-    "files": [{"filename": "audio/starwars/too-far.opus"}],
-    "slash_group": "s"
-  },
-  "a": {
-    "files": [{"filename": "audio/holo/a.opus"}],
-    "slash_group": "h"
-  },
-  "guh": {
-    "files": [
-      {"glob": "audio/holo/guh/guh-*.opus", "weight": 24},
-      {"glob": "audio/holo/guh/guhk-*.opus", "weight": 1}
-    ],
-    "slash_group": "h"
-  },
-  "hic": {
-    "files": [{"glob": "audio/holo/hic/hic-*.opus"}],
-    "slash_group": "h"
-  },
-  "ohimdie": {
-    "aliases": ["ohimdiethankyouforever", "thankyouforever"],
-    "files": [{"filename": "audio/holo/korone/oh-im-die-thank-you-forever.opus"}],
-    "slash_group": "k"
-  },
-  "how": {
-    "aliases": ["how?", "earthbound"],
-    "files": [{"filename": "audio/music/earthbound-how.opus"}]
-  },
-  "iapprove": {
-    "aliases": ["approve"],
-    "files": [{"glob": "audio/holo/iapprove-*.opus"}],
-    "slash_group": "h"
-  },
-  "imhorny": {
-    "aliases": ["horny", "i'mhorny"],
-    "files": [
-      {"glob": "audio/holo/imhorny-01.opus", "weight": 15},
-      {"glob": "audio/holo/imhorny-02.opus", "weight": 9},
-      {"glob": "audio/holo/imhorny-ame.opus", "weight": 1}
-    ],
-    "slash_group": "h"
-  },
-  "wegothim": {
-    "aliases": ["wegottem", "wegotem", "gotem", "gottem", "gothim", "ladiesandgentlemen", "ladiesandgentlemenwegothim", "ladiesandgentlemenwegotten"],
-    "files": [{"filename": "audio/music/we-got-him.opus"}]
-  },
-  "assaultontheears": {
-    "aliases": ["assault", "earassault"],
-    "files": [{"filename": "audio/assault.opus"}]
-  },
-  "dontgetit": {
-    "aliases": ["don'tgetit", "idontgetit", "idon'tgetit"],
-    "files": [{"filename": "audio/dontgetit.opus"}]
-  },
-  "nope": {
-    "aliases": ["no", "koronenope", "koroneno"],
-    "files": [
-      {"glob": "audio/holo/korone/nope-*.opus", "weight": 14},
-      {"filename": "audio/holo/korone/nononononope.opus", "weight": 1}
-    ],
-    "slash_group": "k"
-  },
-  "yes": {
-    "aliases": ["myes", "mmyes", "mmmyes", "koroneyes"],
-    "files": [{"filename": "audio/holo/korone/mmyes.opus"}],
-    "slash_group": "k"
-  },
-  "sure": {
-    "aliases": ["koronesure"],
-    "files": [{"filename": "audio/holo/korone/sure.opus"}],
-    "slash_group": "k"
-  },
-  "impostor": {
-    "aliases": ["sus", "amongus", "impostoramongus"],
-    "files": [{"filename": "audio/amongus-rolereveal.opus"}]
-  },
-  "whymad": {
-    "aliases": ["mad", "whyyouhavetobemad", "whyyoumad"],
-    "files": [{"filename": "audio/why-mad.opus"}]
-  },
-  "isonlygame": {
-    "aliases": ["onlygame", "game", "isonlygamewhymad"],
-    "files": [{"filename": "audio/why-mad-only-game.opus"}]
-  },
-  "wrong": {
-    "aliases": ["you'rewrong", "yourewrong", "yourwrong"],
-    "files": [{"filename": "audio/wrong.opus"}]
-  },
-  "wrongandugly": {
-    "aliases": ["wrong&ugly", "ugly", "you'rewrongandugly", "yourewrongandugly", "yourwrongandugly"],
-    "files": [
-      {"filename": "audio/wrong-ugly.opus", "weight": 4},
-      {"filename": "audio/wrong-ugly-thanks.opus", "weight": 1}
-    ]
-  },
-  "gottabounce": {
-    "aliases": ["anywaysmybroskis", "anywaymybroskis", "anywaysbroskis", "anywaybroskis", "igottabounce", "bounce"],
-    "files": [{"filename": "audio/anyways-broskis-i-gotta-bounce.opus"}]
-  },
-  "fbiopenup": {
-    "aliases": ["fbi", "openup"],
-    "files": [{"filename": "audio/fbi-open-up.opus"}]
-  },
-  "yabe": {
-    "aliases": ["ya-be"],
-    "files": [{"filename": "audio/holo/yabe.opus"}],
-    "slash_group": "h"
-  },
-  "congration": {
-    "aliases": ["congratulation"],
-    "files": [{"filename": "audio/congration.opus"}]
-  },
-  "stfuamericans": {
-    "aliases": ["americans", "american", "stfu"],
-    "files": [{"filename": "audio/stfu-americans.opus"}]
-  },
-  "die": {
-    "files": [{"filename": "audio/holo/korone/die.opus"}],
-    "slash_group": "k"
-  },
-  "youaredie": {
-    "files": [
-      {"filename": "audio/holo/korone/youaredie-1.opus", "weight": 5},
-      {"filename": "audio/holo/korone/youaredie-2.opus", "weight": 4},
-      {"filename": "audio/holo/korone/youaredie-die-die.opus", "weight": 1}
-    ],
-    "slash_group": "k"
-  },
-  "bonk": {
-    "aliases": [],
-    "files": [{"filename": "audio/bonk.opus"}]
-  },
-  "f": {
-    "files": [
-      {"filename": "audio/holo/korone/f.opus"}
-    ],
-    "slash_group": "k"
-  },
-  "bruh": {
-    "aliases": ["bruh2"],
-    "files": [
-      {"filename": "audio/bruh-sound-effect-2.opus"}
-    ]
-  },
-  "laugh": {
-    "aliases": ["laughtrack", "laughter", "funny", "funy"],
-    "files": [
-      {"filename": "audio/laughtrack.opus"}
-    ]
-  },
-  "what": {
-    "aliases": ["what?", "wtf", "wtf?", "what-wtf"],
-    "files": [
-      {"filename": "audio/what.opus", "weight": 1},
-      {"filename": "audio/what-wtf.opus", "weight": 5}
-    ]
-  },
-  "cyberpunk": {
-    "aliases": ["cum", "cyberpunk2077", "2077"],
-    "files": [{"filename": "audio/music/cyberpunk-spoiler.opus"}]
-  },
-  "ultrainstinct": {
-    "aliases": ["dbz", "ultra-instinct", "ultrainstincttheme"],
-    "files": [{"filename": "audio/music/ultra-instinct-theme.opus"}]
-  }
+  "wow": [{"glob": "audio/wow/wow-*.opus"}],
+  "death": [{"glob": "audio/starwars/legostarwarsdeath-*.opus"}],
+  "awman": [{"filename": "audio/music/revenge-awman.opus"}],
+  "doit": [{"filename": "audio/starwars/doit.opus"}],
+  "survival": [{"filename": "audio/michaelrosen/survival.opus"}],
+  "nice": [{"glob": "audio/michaelrosen/nice-*.opus"}],
+  "bitesthedust": [{"filename": "audio/music/queen-bitesthedust.opus"}],
+  "word": [{"filename": "audio/word-ding.opus"}],
+  "vergeofgreatness": [{"filename": "audio/starwars/verge-of-greatness.opus"}],
+  "vsauce": [{"filename": "audio/music/vsauce-music.opus"}],
+  "vsauce+": [{"filename": "audio/music/vsauce-music-extended.opus"}],
+  "wait": [{"filename": "audio/wait-uh-oh.opus"}],
+  "uhoh": [{"filename": "audio/uh-oh.opus"}],
+  "toofar": [{"filename": "audio/starwars/too-far.opus"}],
+  "a": [{"filename": "audio/holo/a.opus"}],
+  "guh": [
+    {"glob": "audio/holo/guh/guh-*.opus", "weight": 24},
+    {"glob": "audio/holo/guh/guhk-*.opus", "weight": 1}
+  ],
+  "hic": [{"glob": "audio/holo/hic/hic-*.opus"}],
+  "ohimdie": [{"filename": "audio/holo/korone/oh-im-die-thank-you-forever.opus"}],
+  "how": [{"filename": "audio/music/earthbound-how.opus"}],
+  "iapprove": [{"glob": "audio/holo/iapprove-*.opus"}],
+  "imhorny": [
+    {"glob": "audio/holo/imhorny-01.opus", "weight": 15},
+    {"glob": "audio/holo/imhorny-02.opus", "weight": 9},
+    {"glob": "audio/holo/imhorny-ame.opus", "weight": 1}
+  ],
+  "wegothim": [{"filename": "audio/music/we-got-him.opus"}],
+  "assaultontheears": [{"filename": "audio/assault.opus"}],
+  "dontgetit": [{"filename": "audio/dontgetit.opus"}],
+  "nope": [
+    {"glob": "audio/holo/korone/nope-*.opus", "weight": 14},
+    {"filename": "audio/holo/korone/nononononope.opus", "weight": 1}
+  ],
+  "yes": [{"filename": "audio/holo/korone/mmyes.opus"}],
+  "sure": [{"filename": "audio/holo/korone/sure.opus"}],
+  "impostor": [{"filename": "audio/amongus-rolereveal.opus"}],
+  "whymad": [{"filename": "audio/why-mad.opus"}],
+  "isonlygame": [{"filename": "audio/why-mad-only-game.opus"}],
+  "wrong": [{"filename": "audio/wrong.opus"}],
+  "wrongandugly": [
+    {"filename": "audio/wrong-ugly.opus", "weight": 4},
+    {"filename": "audio/wrong-ugly-thanks.opus", "weight": 1}
+  ],
+  "gottabounce": [{"filename": "audio/anyways-broskis-i-gotta-bounce.opus"}],
+  "fbiopenup": [{"filename": "audio/fbi-open-up.opus"}],
+  "yabe": [{"filename": "audio/holo/yabe.opus"}],
+  "congration": [{"filename": "audio/congration.opus"}],
+  "stfuamericans": [{"filename": "audio/stfu-americans.opus"}],
+  "die": [{"filename": "audio/holo/korone/die.opus"}],
+  "youaredie": [
+    {"filename": "audio/holo/korone/youaredie-1.opus", "weight": 5},
+    {"filename": "audio/holo/korone/youaredie-2.opus", "weight": 4},
+    {"filename": "audio/holo/korone/youaredie-die-die.opus", "weight": 1}
+  ],
+  "bonk": [{"filename": "audio/bonk.opus"}],
+  "f": [{"filename": "audio/holo/korone/f.opus"}],
+  "bruh": [{"filename": "audio/bruh-sound-effect-2.opus"}],
+  "laugh": [{"filename": "audio/laughtrack.opus"}],
+  "what": [
+    {"filename": "audio/what.opus", "weight": 1},
+    {"filename": "audio/what-wtf.opus", "weight": 5}
+  ],
+  "cyberpunk": [{"filename": "audio/music/cyberpunk-spoiler.opus"}],
+  "ultrainstinct": [{"filename": "audio/music/ultra-instinct-theme.opus"}]
 }
