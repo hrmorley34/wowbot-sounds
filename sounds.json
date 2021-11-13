@@ -1,68 +1,71 @@
 {
-  "wow": [{"glob": "audio/wow/wow-*.opus"}],
-  "death": [{"glob": "audio/starwars/legostarwarsdeath-*.opus"}],
-  "awman": [{"filename": "audio/music/revenge-awman.opus"}],
-  "doit": [{"filename": "audio/starwars/doit.opus"}],
-  "survival": [{"filename": "audio/michaelrosen/survival.opus"}],
-  "nice": [{"glob": "audio/michaelrosen/nice-*.opus"}],
-  "bitesthedust": [{"filename": "audio/music/queen-bitesthedust.opus"}],
-  "word": [{"filename": "audio/word-ding.opus"}],
-  "vergeofgreatness": [{"filename": "audio/starwars/verge-of-greatness.opus"}],
-  "vsauce": [{"filename": "audio/music/vsauce-music.opus"}],
-  "vsauce+": [{"filename": "audio/music/vsauce-music-extended.opus"}],
-  "wait": [{"filename": "audio/wait-uh-oh.opus"}],
-  "uhoh": [{"filename": "audio/uh-oh.opus"}],
-  "toofar": [{"filename": "audio/starwars/too-far.opus"}],
-  "a": [{"filename": "audio/holo/a.opus"}],
-  "guh": [
+  "s.wow": [{"glob": "audio/wow/wow-*.opus"}],
+  "s.death": [{"glob": "audio/starwars/legostarwarsdeath-*.opus"}],
+  "s.revenge.awman": [{"filename": "audio/music/revenge-awman.opus"}],
+  "s.revenge.creeperawman": [{"filename": "audio/music/revenge-creeper-awman.opus"}],
+  "s.doit": [{"filename": "audio/starwars/doit.opus"}],
+  "s.survival": [{"filename": "audio/michaelrosen/survival.opus"}],
+  "s.nice": [{"glob": "audio/michaelrosen/nice-*.opus"}],
+  "s.bitesthedust": [{"filename": "audio/music/queen-bitesthedust.opus"}],
+  "s.word": [{"filename": "audio/word-ding.opus"}],
+  "s.vergeofgreatness": [{"filename": "audio/starwars/verge-of-greatness.opus"}],
+  "s.vsauce": [{"filename": "audio/music/vsauce-music.opus"}],
+  "s.vsauce.extended": [{"filename": "audio/music/vsauce-music-extended.opus"}],
+  "s.uhoh.wait": [{"filename": "audio/wait-uh-oh.opus"}],
+  "s.uhoh.uhoh": [{"filename": "audio/uh-oh.opus"}],
+  "s.toofar": [{"filename": "audio/starwars/too-far.opus"}],
+  "s.a": [{"filename": "audio/holo/a.opus"}],
+  "s.guh": [
     {"glob": "audio/holo/guh/guh-*.opus", "weight": 24},
     {"glob": "audio/holo/guh/guhk-*.opus", "weight": 1}
   ],
-  "hic": [{"glob": "audio/holo/hic/hic-*.opus"}],
-  "ohimdie": [{"filename": "audio/holo/korone/oh-im-die-thank-you-forever.opus"}],
-  "how": [{"filename": "audio/music/earthbound-how.opus"}],
-  "iapprove": [{"glob": "audio/holo/iapprove-*.opus"}],
-  "imhorny": [
+  "s.hic": [{"glob": "audio/holo/hic/hic-*.opus"}],
+  "s.ohimdie": [{"filename": "audio/holo/korone/oh-im-die-thank-you-forever.opus"}],
+  "s.how": [{"filename": "audio/music/earthbound-how.opus"}],
+  "s.iapprove": [{"glob": "audio/holo/iapprove-*.opus"}],
+  "s.imhorny": [
     {"glob": "audio/holo/imhorny-01.opus", "weight": 15},
     {"glob": "audio/holo/imhorny-02.opus", "weight": 9},
     {"glob": "audio/holo/imhorny-ame.opus", "weight": 1}
   ],
-  "wegothim": [{"filename": "audio/music/we-got-him.opus"}],
-  "assaultontheears": [{"filename": "audio/assault.opus"}],
-  "dontgetit": [{"filename": "audio/dontgetit.opus"}],
-  "nope": [
+  "s.wegothim": [{"filename": "audio/music/we-got-him.opus"}],
+  "s.assaultontheears": [{"filename": "audio/assault.opus"}],
+  "s.dontgetit": [{"filename": "audio/dontgetit.opus"}],
+  "s.nope": [
     {"glob": "audio/holo/korone/nope-*.opus", "weight": 14},
     {"filename": "audio/holo/korone/nononononope.opus", "weight": 1}
   ],
-  "yes": [{"filename": "audio/holo/korone/mmyes.opus"}],
-  "sure": [{"filename": "audio/holo/korone/sure.opus"}],
-  "impostor": [{"filename": "audio/amongus-rolereveal.opus"}],
-  "whymad": [{"filename": "audio/why-mad.opus"}],
-  "isonlygame": [{"filename": "audio/why-mad-only-game.opus"}],
-  "wrong": [{"filename": "audio/wrong.opus"}],
-  "wrongandugly": [
+  "s.yes": [{"filename": "audio/holo/korone/mmyes.opus"}],
+  "s.sure": [{"filename": "audio/holo/korone/sure.opus"}],
+  "s.impostor": [{"filename": "audio/amongus-rolereveal.opus"}],
+  "s.whymad": [{"filename": "audio/why-mad.opus"}],
+  "s.isonlygame": [{"filename": "audio/why-mad-only-game.opus"}],
+  "s.wrong": [{"filename": "audio/wrong.opus"}],
+  "s.wrong.andugly": [
     {"filename": "audio/wrong-ugly.opus", "weight": 4},
     {"filename": "audio/wrong-ugly-thanks.opus", "weight": 1}
   ],
-  "gottabounce": [{"filename": "audio/anyways-broskis-i-gotta-bounce.opus"}],
-  "fbiopenup": [{"filename": "audio/fbi-open-up.opus"}],
-  "yabe": [{"filename": "audio/holo/yabe.opus"}],
-  "congration": [{"filename": "audio/congration.opus"}],
-  "stfuamericans": [{"filename": "audio/stfu-americans.opus"}],
-  "die": [{"filename": "audio/holo/korone/die.opus"}],
-  "youaredie": [
+  "s.gottabounce": [{"filename": "audio/anyways-broskis-i-gotta-bounce.opus"}],
+  "s.fbiopenup": [{"filename": "audio/fbi-open-up.opus"}],
+  "s.yabe": [{"filename": "audio/holo/yabe.opus"}],
+  "s.congration": [{"filename": "audio/congration.opus"}],
+  "s.stfuamericans": [{"filename": "audio/stfu-americans.opus"}],
+  "s.die": [{"filename": "audio/holo/korone/die.opus"}],
+  "s.youaredie": [
     {"filename": "audio/holo/korone/youaredie-1.opus", "weight": 5},
     {"filename": "audio/holo/korone/youaredie-2.opus", "weight": 4},
     {"filename": "audio/holo/korone/youaredie-die-die.opus", "weight": 1}
   ],
-  "bonk": [{"filename": "audio/bonk.opus"}],
-  "f": [{"filename": "audio/holo/korone/f.opus"}],
-  "bruh": [{"filename": "audio/bruh-sound-effect-2.opus"}],
-  "laugh": [{"filename": "audio/laughtrack.opus"}],
-  "what": [
+  "s.bonk": [{"filename": "audio/bonk.opus"}],
+  "s.f": [{"filename": "audio/holo/korone/f.opus"}],
+  "s.bruh": [{"filename": "audio/bruh-sound-effect-2.opus"}],
+  "s.laugh": [{"filename": "audio/laughtrack.opus"}],
+  "s.what": [
     {"filename": "audio/what.opus", "weight": 1},
     {"filename": "audio/what-wtf.opus", "weight": 5}
   ],
-  "cyberpunk": [{"filename": "audio/music/cyberpunk-spoiler.opus"}],
-  "ultrainstinct": [{"filename": "audio/music/ultra-instinct-theme.opus"}]
+  "s.what.what": [{"filename": "audio/what.opus", "weight": 1}],
+  "s.what.wtf": [{"filename": "audio/what-wtf.opus", "weight": 5}],
+  "s.cyberpunk": [{"filename": "audio/music/cyberpunk-spoiler.opus"}],
+  "s.ultrainstinct": [{"filename": "audio/music/ultra-instinct-theme.opus"}]
 }

@@ -1,153 +1,153 @@
 {
   "": {
     "wow": {
-      "sound": "wow"
+      "sound": "s.wow"
     },
     "awman": {
-      "sound": "awman"
+      "sound": "s.revenge.awman"
     },
     "survival": {
-      "sound": "survival"
+      "sound": "s.survival"
     },
     "nice": {
-      "sound": "nice"
+      "sound": "s.nice"
     },
     "bitesthedust": {
-      "sound": "bitesthedust"
+      "sound": "s.bitesthedust"
     },
     "word": {
-      "sound": "word"
+      "sound": "s.word"
     },
     "vsauce": {
       "options": {
         "short": {
-          "sound": "vsauce"
+          "sound": "s.vsauce"
         },
         "extended": {
-          "sound": "vsauce+"
+          "sound": "s.vsauce.extended"
         }
       },
       "default": "short"
     },
     "wait": {
-      "sound": "wait"
+      "sound": "s.uhoh.wait"
     },
     "uhoh": {
-      "sound": "uhoh"
+      "sound": "s.uhoh.uhoh"
     },
     "how": {
-      "sound": "how"
+      "sound": "s.how"
     },
     "wegothim": {
-      "sound": "wegothim"
+      "sound": "s.wegothim"
     },
     "assaultontheears": {
-      "sound": "assaultontheears"
+      "sound": "s.assaultontheears"
     },
     "dontgetit": {
-      "sound": "dontgetit"
+      "sound": "s.dontgetit"
     },
     "impostor": {
-      "sound": "impostor"
+      "sound": "s.impostor"
     },
     "whymad": {
-      "sound": "whymad"
+      "sound": "s.whymad"
     },
     "isonlygame": {
-      "sound": "isonlygame"
+      "sound": "s.isonlygame"
     },
     "wrong": {
-      "sound": "wrong"
+      "sound": "s.wrong"
     },
     "wrongandugly": {
-      "sound": "wrongandugly"
+      "sound": "s.wrong.andugly"
     },
     "gottabounce": {
-      "sound": "gottabounce"
+      "sound": "s.gottabounce"
     },
     "fbiopenup": {
-      "sound": "fbiopenup"
+      "sound": "s.fbiopenup"
     },
     "congration": {
-      "sound": "congration"
+      "sound": "s.congration"
     },
     "stfuamericans": {
-      "sound": "stfuamericans"
+      "sound": "s.stfuamericans"
     },
     "bonk": {
-      "sound": "bonk"
+      "sound": "s.bonk"
     },
     "bruh": {
-      "sound": "bruh"
+      "sound": "s.bruh"
     },
     "laugh": {
-      "sound": "laugh"
+      "sound": "s.laugh"
     },
     "what": {
-      "sound": "what"
+      "sound": "s.what"
     },
     "cyberpunk": {
-      "sound": "cyberpunk"
+      "sound": "s.cyberpunk"
     },
     "ultrainstinct": {
-      "sound": "ultrainstinct"
+      "sound": "s.ultrainstinct"
     }
   },
   "s": {
     "death": {
-      "sound": "death"
+      "sound": "s.death"
     },
     "doit": {
-      "sound": "doit"
+      "sound": "s.doit"
     },
     "vergeofgreatness": {
-      "sound": "vergeofgreatness"
+      "sound": "s.vergeofgreatness"
     },
     "toofar": {
-      "sound": "toofar"
+      "sound": "s.toofar"
     }
   },
   "h": {
     "a": {
-      "sound": "a"
+      "sound": "s.a"
     },
     "guh": {
-      "sound": "guh"
+      "sound": "s.guh"
     },
     "hic": {
-      "sound": "hic"
+      "sound": "s.hic"
     },
     "iapprove": {
-      "sound": "iapprove"
+      "sound": "s.iapprove"
     },
     "imhorny": {
-      "sound": "imhorny"
+      "sound": "s.imhorny"
     },
     "yabe": {
-      "sound": "yabe"
+      "sound": "s.yabe"
     }
   },
   "k": {
     "ohimdie": {
-      "sound": "ohimdie"
+      "sound": "s.ohimdie"
     },
     "nope": {
-      "sound": "nope"
+      "sound": "s.nope"
     },
     "yes": {
-      "sound": "yes"
+      "sound": "s.yes"
     },
     "sure": {
-      "sound": "sure"
+      "sound": "s.sure"
     },
     "die": {
-      "sound": "die"
+      "sound": "s.die"
     },
     "youaredie": {
-      "sound": "youaredie"
+      "sound": "s.youaredie"
     },
     "f": {
-      "sound": "f"
+      "sound": "s.f"
     }
   }
 }
