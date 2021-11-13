@@ -24,22 +24,36 @@ class _SoundRequiredDef(TypedDict, total=True):
     sound: SoundName
 
 
-class CommandDef(_SoundRequiredDef, total=False):
+class _DescriptionOptionalDef(TypedDict, total=False):
+    description: str
+
+
+CommandKwargType = NewType("CommandKwargType", Dict[str, Any])
+
+
+class CommandDef(_SoundRequiredDef, _DescriptionOptionalDef, total=False):
     # sound: SoundName
+    # description: str
 
     aliases: List[CommandAliasName]
-    description: str
-    commandkwargs: Dict[str, Any]
+    commandkwargs: CommandKwargType
 
 
-class SlashCommandDef(_SoundRequiredDef, total=False):
+class SlashCommandDef(_SoundRequiredDef, _DescriptionOptionalDef, total=False):
     # sound: SoundName
+    # description: str
+    pass
 
-    description: str
+
+class SlashCommandOptionOption(_SoundRequiredDef):
+    # sound: SoundName
+    pass
 
 
-class SlashCommandOptionDef(TypedDict, total=True):
-    options: Dict[SlashOption, SlashCommandDef]
+class SlashCommandOptionDef(_DescriptionOptionalDef, total=True):
+    # description: str
+
+    options: Dict[SlashOption, SlashCommandOptionOption]
     default: SlashOption
 
 
