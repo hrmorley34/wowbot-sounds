@@ -1,10 +1,10 @@
 from collections import defaultdict
 from contextvars import ContextVar
 from pathlib import Path
-from typing import Any, Callable, DefaultDict, Generic, Optional, Set, TypeVar, cast
+from typing import Any, Callable, DefaultDict, Generic, Optional, Set, Tuple, TypeVar, cast
 
 from .problem import Problems
-from .typing import SoundName
+from .typing import CommandName, SlashGroup, SlashName, SoundName
 
 
 T = TypeVar("T")
@@ -40,11 +40,15 @@ class _ContextVarProperty(Generic[T]):
 
 problems: ContextVar[Optional[Problems]] = ContextVar("problems")
 files: ContextVar[Optional[DefaultDict[Path, Set[SoundName]]]] = ContextVar("files")
+commandsounds: ContextVar[Optional[DefaultDict[SoundName, Set[CommandName]]]] = ContextVar("commandsounds")
+slashsounds: ContextVar[Optional[DefaultDict[SoundName, Set[Tuple[Optional[SlashGroup], SlashName]]]]] = ContextVar("slashsounds")
 
 
 class _Verbose:
     problems = _ContextVarProperty(problems, list)
     files = _ContextVarProperty(files, lambda: defaultdict(set))
+    commandsounds = _ContextVarProperty(commandsounds, lambda: defaultdict(set))
+    slashsounds = _ContextVarProperty(slashsounds, lambda: defaultdict(set))
 
 
 verbose = _Verbose()
