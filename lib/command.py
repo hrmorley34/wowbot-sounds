@@ -36,9 +36,10 @@ class BaseSlashCommand:
     description: Optional[str]
 
     _slashcommandtypes: Dict[SlashCommandType, Type["BaseSlashCommand"]] = {}
+    _is_base: bool = True
 
     def __new__(cls, group: Optional[SlashGroup], name: SlashName, data: SlashCommandCommon, sounds: SoundDict):
-        if cls is not BaseSlashCommand:
+        if not getattr(cls, "_is_base", False):
             return object.__new__(cls)
 
         if "options" in data:
@@ -49,6 +50,7 @@ class BaseSlashCommand:
     def __init_subclass__(cls, *, slashtype: Optional[SlashCommandType] = None):
         if slashtype is not None:
             cls._slashcommandtypes[slashtype] = cls
+            cls._is_base = False
 
     def __init__(self, group: Optional[SlashGroup], name: SlashName, data: SlashCommandCommon, sounds: SoundDict):
         raise NotImplementedError
