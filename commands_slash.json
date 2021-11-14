@@ -1,0 +1,153 @@
+{
+  "": {
+    "wow": {
+      "sound": "s.wow"
+    },
+    "awman": {
+      "sound": "s.revenge.awman"
+    },
+    "survival": {
+      "sound": "s.survival"
+    },
+    "nice": {
+      "sound": "s.nice"
+    },
+    "bitesthedust": {
+      "sound": "s.bitesthedust"
+    },
+    "word": {
+      "sound": "s.word"
+    },
+    "vsauce": {
+      "options": {
+        "short": {
+          "sound": "s.vsauce"
+        },
+        "extended": {
+          "sound": "s.vsauce.extended"
+        }
+      },
+      "default": "short"
+    },
+    "wait": {
+      "sound": "s.uhoh.wait"
+    },
+    "uhoh": {
+      "sound": "s.uhoh.uhoh"
+    },
+    "how": {
+      "sound": "s.how"
+    },
+    "wegothim": {
+      "sound": "s.wegothim"
+    },
+    "assaultontheears": {
+      "sound": "s.assaultontheears"
+    },
+    "dontgetit": {
+      "sound": "s.dontgetit"
+    },
+    "impostor": {
+      "sound": "s.impostor"
+    },
+    "whymad": {
+      "sound": "s.whymad"
+    },
+    "isonlygame": {
+      "sound": "s.isonlygame"
+    },
+    "wrong": {
+      "sound": "s.wrong"
+    },
+    "wrongandugly": {
+      "sound": "s.wrong.andugly"
+    },
+    "gottabounce": {
+      "sound": "s.gottabounce"
+    },
+    "fbiopenup": {
+      "sound": "s.fbiopenup"
+    },
+    "congration": {
+      "sound": "s.congration"
+    },
+    "stfuamericans": {
+      "sound": "s.stfuamericans"
+    },
+    "bonk": {
+      "sound": "s.bonk"
+    },
+    "bruh": {
+      "sound": "s.bruh"
+    },
+    "laugh": {
+      "sound": "s.laugh"
+    },
+    "what": {
+      "sound": "s.what"
+    },
+    "cyberpunk": {
+      "sound": "s.cyberpunk"
+    },
+    "ultrainstinct": {
+      "sound": "s.ultrainstinct"
+    }
+  },
+  "s": {
+    "death": {
+      "sound": "s.death"
+    },
+    "doit": {
+      "sound": "s.doit"
+    },
+    "vergeofgreatness": {
+      "sound": "s.vergeofgreatness"
+    },
+    "toofar": {
+      "sound": "s.toofar"
+    }
+  },
+  "h": {
+    "a": {
+      "sound": "s.a"
+    },
+    "guh": {
+      "sound": "s.guh"
+    },
+    "hic": {
+      "sound": "s.hic"
+    },
+    "iapprove": {
+      "sound": "s.iapprove"
+    },
+    "imhorny": {
+      "sound": "s.imhorny"
+    },
+    "yabe": {
+      "sound": "s.yabe"
+    }
+  },
+  "k": {
+    "ohimdie": {
+      "sound": "s.ohimdie"
+    },
+    "nope": {
+      "sound": "s.nope"
+    },
+    "yes": {
+      "sound": "s.yes"
+    },
+    "sure": {
+      "sound": "s.sure"
+    },
+    "die": {
+      "sound": "s.die"
+    },
+    "youaredie": {
+      "sound": "s.youaredie"
+    },
+    "f": {
+      "sound": "s.f"
+    }
+  }
+}
