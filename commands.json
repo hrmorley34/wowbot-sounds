@@ -132,7 +132,7 @@
       "assault",
       "earassault"
     ],
-    "sound": "s.assaultontheears"
+    "sound": "s.c.assaultontheears"
   },
   "dontgetit": {
     "aliases": [

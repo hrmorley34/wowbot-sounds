@@ -128,9 +128,9 @@
       "filename": "audio/music/we-got-him.opus"
     }
   ],
-  "s.assaultontheears": [
+  "s.c.assaultontheears": [
     {
-      "filename": "audio/assault.opus"
+      "filename": "audio/custom/assault-on-the-ears.opus"
     }
   ],
   "s.dontgetit": [
