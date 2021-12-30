@@ -127,13 +127,6 @@
     ],
     "sound": "s.wegothim"
   },
-  "assaultontheears": {
-    "aliases": [
-      "assault",
-      "earassault"
-    ],
-    "sound": "s.assaultontheears"
-  },
   "dontgetit": {
     "aliases": [
       "don'tgetit",
