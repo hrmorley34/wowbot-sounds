@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any, Callable, DefaultDict, Generic, Optional, Set, Tuple, TypeVar, cast
 
 from .problem import Problems
-from .typing import CommandName, SlashGroup, SlashName, SoundName
+from .types import CommandName, SlashGroup, SlashName, SoundName
 
 
 T = TypeVar("T")

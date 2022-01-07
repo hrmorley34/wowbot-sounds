@@ -3,7 +3,7 @@ import random
 from typing import Dict, List, Sequence
 
 from .problem import Problem
-from .typing import SoundDef, SoundName
+from .types import SoundDef, SoundName
 from .verbose import verbose as _v
 
 
@@ -52,22 +52,38 @@ class Sound:
             if "glob" in fd:
                 globdata = tuple(rootdir.glob(fd["glob"]))
                 if not globdata:
-                    _v.problems.append(Problem(f"No files for glob: {fd['glob']!r}", context=f"Sound {name!r}"))
+                    _v.problems.append(
+                        Problem(
+                            f"No files for glob: {fd['glob']!r}",
+                            context=f"Sound {name!r}",
+                        )
+                    )
                 filenames.extend(globdata)
             if "filenames" in fd:
                 fns = fd["filenames"]
                 if not fns:
-                    _v.problems.append(Problem("Empty list of filenames", context=f"Sound {name!r}"))
+                    _v.problems.append(
+                        Problem("Empty list of filenames", context=f"Sound {name!r}")
+                    )
                 for ofn, fn in zip(fns, map(rootdir.joinpath, fns)):
                     if not fn.exists():
-                        _v.problems.append(Problem(f"File {ofn!r} does not exist", context=f"Sound {name!r}; filenames {fns!r}"))
+                        _v.problems.append(
+                            Problem(
+                                f"File {ofn!r} does not exist",
+                                context=f"Sound {name!r}; filenames {fns!r}",
+                            )
+                        )
                     else:
                         filenames.append(fn)
             if "filename" in fd:
                 ofn = fd["filename"]
                 fn = rootdir / ofn
                 if not fn.exists():
-                    _v.problems.append(Problem(f"File {ofn!r} does not exist", context=f"Sound {name!r}"))
+                    _v.problems.append(
+                        Problem(
+                            f"File {ofn!r} does not exist", context=f"Sound {name!r}"
+                        )
+                    )
                 else:
                     filenames.append(fn)
 
@@ -75,14 +91,29 @@ class Sound:
                 try:
                     weight = int(fd.get("weight", 1))
                 except ValueError:
-                    _v.problems.append(Problem(f"Invalid weight: {fd.get('weight')!r}", context=f"Sound {name!r}"))
-                else:
-                    arrays.append(filenames)
-                    weights.append(weight)
-                    for f in filenames:
-                        _v.files[f].add(self.name)
+                    _v.problems.append(
+                        Problem(
+                            f"Invalid weight: {fd.get('weight')!r}",
+                            context=f"Sound {name!r}",
+                        )
+                    )
+                    continue
+                if weight <= 0:
+                    _v.problems.append(
+                        Problem(
+                            f"Invalid weight: {fd.get('weight')!r}",
+                            context=f"Sound {name!r}",
+                        )
+                    )
+                    continue
+                arrays.append(filenames)
+                weights.append(weight)
+                for f in filenames:
+                    _v.files[f].add(self.name)
             else:
-                _v.problems.append(Problem("No sounds supplied", context=f"Sound {name!r}"))
+                _v.problems.append(
+                    Problem("No sounds supplied", context=f"Sound {name!r}")
+                )
 
         self.sound_arrays = arrays
         self.sound_weights = weights
