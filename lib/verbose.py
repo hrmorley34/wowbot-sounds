@@ -1,28 +1,34 @@
-from collections import defaultdict
+__all__ = [
+    "ContextType",
+    "get_verbose",
+    "set_verbose",
+    "get_context",
+    "context",
+]
+
 from contextvars import ContextVar
-from pathlib import Path
-from typing import DefaultDict, Optional, Set, Tuple
+from typing import Any, Tuple
 
-from .problem import Problems
-from .types import CommandName, SlashGroup, SlashName, SoundName
-from .utils import DefaultContextVarProperty
+from .utils import ContextVarWithValue
 
 
-problems: ContextVar[Optional[Problems]] = ContextVar("problems")
-files: ContextVar[Optional[DefaultDict[Path, Set[SoundName]]]] = ContextVar("files")
-commandsounds: ContextVar[
-    Optional[DefaultDict[SoundName, Set[CommandName]]]
-] = ContextVar("commandsounds")
-slashsounds: ContextVar[
-    Optional[DefaultDict[SoundName, Set[Tuple[Optional[SlashGroup], SlashName]]]]
-] = ContextVar("slashsounds")
+_verbose: ContextVar[bool] = ContextVar("verbose")
+ContextType = Tuple[Any, ...]
+_context: ContextVar[ContextType] = ContextVar("context")
 
 
-class _Verbose:
-    problems = DefaultContextVarProperty(problems, list)
-    files = DefaultContextVarProperty(files, lambda: defaultdict(set))
-    commandsounds = DefaultContextVarProperty(commandsounds, lambda: defaultdict(set))
-    slashsounds = DefaultContextVarProperty(slashsounds, lambda: defaultdict(set))
+def get_verbose() -> bool:
+    return _verbose.get(False)
 
 
-verbose = _Verbose()
+def set_verbose(value: bool = True) -> None:
+    _verbose.set(value)
+
+
+def get_context() -> ContextType:
+    return _context.get()
+
+
+def context(*obj: Any) -> ContextVarWithValue[ContextType]:
+    "Context manager for adding a context (for `Problem`s)"
+    return ContextVarWithValue(_context, _context.get(()) + tuple(obj))
