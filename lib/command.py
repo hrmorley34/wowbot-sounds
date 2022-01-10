@@ -7,6 +7,7 @@ from collections import defaultdict
 from contextvars import ContextVar
 from typing import Any, DefaultDict, Dict, Generic, Optional, Set, cast
 
+from .permissions import Permissions, get_permissions
 from .problem import Problem
 from .sound import Sound, SoundT, SoundTDict
 from .types import (
@@ -14,7 +15,6 @@ from .types import (
     AnyCommandName,
     CommandAliasName,
     CommandDef,
-    CommandKwargType,
     CommandName,
 )
 from .utils import DefaultContextVarProperty
@@ -37,7 +37,9 @@ class Command(Generic[SoundT]):
     sound: SoundT
     aliases: Set[CommandAliasName]
     description: Optional[str]
-    commandkwargs: CommandKwargType
+
+    default_permission: bool
+    permissions: Permissions
 
     def __init__(self, name: CommandName, data: CommandDef, sounds: SoundTDict[SoundT]):
         self.name = name
@@ -49,7 +51,7 @@ class Command(Generic[SoundT]):
 
         self.description = data.get("description")
 
-        self.commandkwargs = data.get("commandkwargs", {})
+        self.default_permission, self.permissions = get_permissions(data)
 
     def __hash__(self) -> int:
         return hash((type(self), self.name, self.sound))

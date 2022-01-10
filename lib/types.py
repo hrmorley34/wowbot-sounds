@@ -9,7 +9,9 @@ __all__ = [
     "SoundDef",
     "SoundRequiredMixin",
     "DescriptionOptionalMixin",
-    "CommandKwargType",
+    "PermissionDef",
+    "PermissionsDef",
+    "PermissionsOptionalMixin",
     "CommandDef",
     "SlashCommandDef",
     "SlashCommandOptionOption",
@@ -21,7 +23,8 @@ __all__ = [
     "COMMANDS_SLASH_JSON",
 ]
 
-from typing import Any, Dict, List, NewType, TypeVar, TypedDict, Union
+from typing import Dict, List, NewType, TypeVar, TypedDict, Union
+from typing_extensions import Literal
 
 
 T = TypeVar("T")
@@ -29,8 +32,10 @@ T = TypeVar("T")
 
 SoundName = NewType("SoundName", str)
 AnyCommandName = NewType("CommandCommonName", str)
+
 CommandName = NewType("CommandName", AnyCommandName)
 CommandAliasName = NewType("CommandAliasName", AnyCommandName)
+
 SlashName = NewType("SlashName", str)
 SlashOption = NewType("SlashOption", str)
 
@@ -53,18 +58,40 @@ class DescriptionOptionalMixin(TypedDict, total=False):
     description: str
 
 
-CommandKwargType = NewType("CommandKwargType", Dict[str, Any])
+PERMISSION_TYPE_ROLE = "role"
+PERMISSION_TYPE_USER = "user"
+PermissionType = Literal["role", "user"]
 
 
-class CommandDef(SoundRequiredMixin, DescriptionOptionalMixin, total=False):
+class _PartialPermissionDef(TypedDict, total=False):
+    state: bool
+
+
+class PermissionDef(_PartialPermissionDef, total=True):
+    type: PermissionType
+    ids: List[int]
+
+
+PermissionsDef = List[PermissionDef]
+
+
+class PermissionsOptionalMixin(TypedDict, total=False):
+    default_permission: bool
+    permissions: PermissionsDef
+
+
+class CommandDef(
+    SoundRequiredMixin, DescriptionOptionalMixin, PermissionsOptionalMixin, total=False
+):
     # sound: SoundName
     # description: str
 
     aliases: List[CommandAliasName]
-    commandkwargs: CommandKwargType
 
 
-class SlashCommandDef(SoundRequiredMixin, DescriptionOptionalMixin, total=False):
+class SlashCommandDef(
+    SoundRequiredMixin, DescriptionOptionalMixin, PermissionsOptionalMixin, total=False
+):
     # sound: SoundName
     # description: str
     pass
@@ -75,14 +102,16 @@ class SlashCommandOptionOption(SoundRequiredMixin):
     pass
 
 
-class SlashCommandOptionDef(DescriptionOptionalMixin, total=True):
+class SlashCommandOptionDef(
+    DescriptionOptionalMixin, PermissionsOptionalMixin, total=True
+):
     # description: str
 
     options: Dict[SlashOption, SlashCommandOptionOption]
     default: SlashOption
 
 
-class SlashSubcommandDef(TypedDict, total=True):
+class SlashSubcommandDef(PermissionsOptionalMixin, total=True):
     subcommands: Dict[SlashName, "AnySlashCommandDef"]
 
 

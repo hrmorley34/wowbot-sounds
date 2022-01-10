@@ -23,6 +23,7 @@ from typing import (
     cast,
 )
 
+from .permissions import Permissions, get_permissions
 from .problem import Problem
 from .sound import Sound, SoundT, SoundTDict
 from .types import (
@@ -64,7 +65,9 @@ class BaseSlashCommand(Generic[SoundT]):
 
     name: SlashName
     parent: Optional["SlashSubcommandCommand[SoundT]"]
-    description: Optional[str]
+
+    default_permission: bool
+    permissions: Permissions
 
     @staticmethod
     def get_type(data: AnySlashCommandDef) -> SlashCommandType:
@@ -118,6 +121,8 @@ class BaseSlashCommand(Generic[SoundT]):
             )
         self.name = name
         self.parent = parent
+
+        self.default_permission, self.permissions = get_permissions(data)
 
     @classmethod
     def init_verbose(
