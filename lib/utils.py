@@ -85,6 +85,9 @@ class DefaultContextVarProperty(Generic[T], ContextVarProperty[Optional[T]]):
         self._contextvar.set(None)
 
 
+_SubT = TypeVar("_SubT", bound="ContextVarWithValue[Any]")
+
+
 class ContextVarWithValue(ContextManager[T], Generic[T]):
     _var: ContextVar[T]
     _value: Union[T, _DefaultType]
@@ -103,7 +106,7 @@ class ContextVarWithValue(ContextManager[T], Generic[T]):
         self._entered = False
         self._exited = False
 
-    def __enter__(self) -> "ContextVarWithValue[T]":
+    def __enter__(self: _SubT) -> _SubT:
         assert not self._entered and not self._exited
         if not isinstance(self._value, _DefaultType):
             self._token = self._var.set(self._value)

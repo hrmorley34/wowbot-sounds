@@ -275,8 +275,9 @@ class SlashSubcommandCommand(
 
         self.subcommands = {}
         for subname, subdata in data["subcommands"].items():
-            self.subcommands[subname] = BaseSlashCommand.init_verbose(
-                self, subname, subdata, sounds=sounds
-            )
+            with context(f"Subcommand {subname!r}"):
+                self.subcommands[subname] = BaseSlashCommand.init_verbose(
+                    self, subname, subdata, sounds=sounds
+                )
 
         return self
