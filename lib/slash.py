@@ -171,7 +171,7 @@ BaseSlashCommand.base_type = BaseSlashCommand
 
 
 class SlashCommand(BaseSlashCommand[SoundT], slashtype=SlashCommandType.normal):
-    sound: Sound
+    sound: SoundT
 
     def __init__(
         self,
@@ -202,7 +202,7 @@ class SlashCommand(BaseSlashCommand[SoundT], slashtype=SlashCommandType.normal):
 
 
 class SlashOptionCommand(BaseSlashCommand[SoundT], slashtype=SlashCommandType.options):
-    options: Dict[SlashOption, Sound]
+    options: Dict[SlashOption, SoundT]
     default: SlashOption
 
     def __init__(
