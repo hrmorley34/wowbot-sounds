@@ -1,115 +1,59 @@
-from enum import Enum
-import re
-from typing import ClassVar, Dict, Optional, Type, cast
+from pydantic import constr, root_validator
+from typing import Any, Dict, NewType, Union
 
-from .sound import Sound, SoundDict
-from .types import (
-    SlashCommandCommon,
-    SlashCommandDef,
-    SlashCommandOptionDef,
-    SlashGroup,
-    SlashName,
-    SlashOption,
-)
+from .permissions import PermissionsOptionalMixin
+from .sound import SoundRequiredMixin
+from .types import DescriptionOptionalMixin, NameKeyDict, NamedMixin
 
 
-RE_APPLICATION_COMMAND = re.compile(r"^[\w-]{1,32}$")
+# https://discord.com/developers/docs/interactions/application-commands#application-command-object
+SlashNameType = constr(regex=r"^[\w-]{1,32}$")
+# https://discord.com/developers/docs/interactions/application-commands#application-command-object-application-command-option-choice-structure
+SlashOptionType = constr(regex=r"^.{1,100}$")
+
+SlashName = NewType("SlashName", SlashNameType)
+SlashOption = NewType("SlashOption", SlashOptionType)
 
 
-class SlashCommandType(Enum):
-    normal = "normal"
-    options = "options"
+class CommonSlashCommand(
+    NamedMixin[SlashName],
+    PermissionsOptionalMixin,
+):
+    pass
 
 
-class BaseSlashCommand:
-    name: SlashName
-    group: Optional[SlashGroup]
-    description: Optional[str]
-
-    _slashcommandtypes: ClassVar[Dict[SlashCommandType, Type["BaseSlashCommand"]]] = {}
-    _is_base: ClassVar[bool] = True
-
-    def __new__(
-        cls,
-        group: Optional[SlashGroup],
-        name: SlashName,
-        data: SlashCommandCommon,
-        sounds: SoundDict,
-    ):
-        if not getattr(cls, "_is_base", False):
-            return object.__new__(cls)
-
-        if "options" in data:
-            return cls._slashcommandtypes[SlashCommandType.options](
-                group, name, cast(SlashCommandOptionDef, data), sounds=sounds
-            )
-        else:
-            return cls._slashcommandtypes[SlashCommandType.normal](
-                group, name, data, sounds=sounds
-            )
-
-    def __init_subclass__(
-        cls, *, is_base: bool = False, slashtype: Optional[SlashCommandType] = None
-    ):
-        if is_base:
-            cls._is_base = True
-            cls._slashcommandtypes = {}
-            if slashtype is not None:
-                raise ValueError("Class with is_base cannot have a type")
-        if slashtype is not None:
-            cls._slashcommandtypes[slashtype] = cls
-            cls._is_base = False
-
-    def __init__(
-        self,
-        group: Optional[SlashGroup],
-        name: SlashName,
-        data: SlashCommandCommon,
-        sounds: SoundDict,
-    ):
-        raise NotImplementedError
+class SlashCommand(
+    CommonSlashCommand,
+    SoundRequiredMixin,
+    DescriptionOptionalMixin,
+):
+    pass
 
 
-class SlashCommand(BaseSlashCommand, slashtype=SlashCommandType.normal):
-    sound: Sound
-
-    def __init__(
-        self,
-        group: Optional[SlashGroup],
-        name: SlashName,
-        data: SlashCommandDef,
-        sounds: SoundDict,
-    ):
-        self.name = name
-        if not group:
-            group = None
-        self.group = group
-
-        self.description = data.get("description")
-
-        self.sound = sounds[data["sound"]]
+class SlashCommandOptionOption(SoundRequiredMixin):
+    pass
 
 
-class SlashOptionCommand(BaseSlashCommand, slashtype=SlashCommandType.options):
-    options: Dict[SlashOption, Sound]
+class SlashOptionCommand(
+    CommonSlashCommand,
+    DescriptionOptionalMixin,
+):
+    options: Dict[SlashOption, SlashCommandOptionOption]
     default: SlashOption
 
-    def __init__(
-        self,
-        group: Optional[SlashGroup],
-        name: SlashName,
-        data: SlashCommandOptionDef,
-        sounds: SoundDict,
-    ):
-        self.name = name
-        if not group:
-            group = None
-        self.group = group
+    @root_validator()
+    def check_default_exists(cls, values: Dict[str, Any]):
+        if "default" in values and "options" in values:
+            if values["default"] not in values["options"]:
+                raise ValueError("Default not in options")
+        return values
 
-        self.description = data.get("description")
 
-        self.options = dict()
-        for opname, opdata in data["options"].items():
-            self.options[opname] = sounds[opdata["sound"]]
+class SlashSubcommand(CommonSlashCommand):
+    subcommands: "NameKeyDict[SlashName, AnySlashCommand]"
 
-        self.default = data["default"]
+
+AnySlashCommand = Union[SlashCommand, SlashOptionCommand, SlashSubcommand]
+SlashSubcommand.update_forward_refs()
+
+COMMANDS_SLASH_JSON = NameKeyDict[SlashName, AnySlashCommand]
