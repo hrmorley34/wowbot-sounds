@@ -1,293 +1,206 @@
 {
-  "wow": {
-    "sound": "s.wow"
-  },
-  "death": {
-    "sound": "s.death"
-  },
-  "awman": {
-    "aliases": [
-      "creeper",
-      "awwman",
-      "awwwman",
-      "awwwwman"
-    ],
-    "sound": "s.revenge.awman"
-  },
-  "doit": {
-    "sound": "s.doit"
-  },
-  "survival": {
-    "sound": "s.survival"
-  },
-  "nice": {
-    "sound": "s.nice"
-  },
-  "bitesthedust": {
-    "aliases": [
-      "anotherone",
-      "bitethedust",
-      "bitthedust",
-      "anotheronebitesthedust"
-    ],
-    "sound": "s.bitesthedust"
-  },
-  "word": {
-    "sound": "s.word"
-  },
-  "vergeofgreatness": {
-    "aliases": [
-      "verge",
-      "vergegreatness",
-      "thisclose"
-    ],
-    "sound": "s.vergeofgreatness"
-  },
-  "vsauce": {
-    "aliases": [
-      "heyvsauce"
-    ],
-    "sound": "s.vsauce"
-  },
-  "vsauce+": {
-    "aliases": [
-      "vsauce2",
-      "heyvsauce+",
-      "vsauceext",
-      "vsaucext"
-    ],
-    "sound": "s.vsauce.extended"
-  },
-  "wait": {
-    "aliases": [
-      "waituhoh",
-      "wuhoh"
-    ],
-    "sound": "s.uhoh.wait"
-  },
-  "uhoh": {
-    "aliases": [
-      "uh-oh",
-      "uoh"
-    ],
-    "sound": "s.uhoh.uhoh"
-  },
-  "toofar": {
-    "aliases": [
-      "gonetoofar"
-    ],
-    "sound": "s.toofar"
-  },
-  "a": {
-    "sound": "s.a"
-  },
-  "guh": {
-    "sound": "s.guh"
-  },
-  "hic": {
-    "sound": "s.hic"
-  },
-  "ohimdie": {
-    "aliases": [
-      "ohimdiethankyouforever",
-      "thankyouforever"
-    ],
-    "sound": "s.ohimdie"
-  },
-  "how": {
-    "aliases": [
-      "how?",
-      "earthbound"
-    ],
-    "sound": "s.how"
-  },
-  "iapprove": {
-    "aliases": [
-      "approve"
-    ],
-    "sound": "s.iapprove"
-  },
-  "imhorny": {
-    "aliases": [
-      "horny",
-      "i'mhorny"
-    ],
-    "sound": "s.imhorny"
-  },
-  "wegothim": {
-    "aliases": [
-      "wegottem",
-      "wegotem",
-      "gotem",
-      "gottem",
-      "gothim",
-      "ladiesandgentlemen",
-      "ladiesandgentlemenwegothim",
-      "ladiesandgentlemenwegotten"
-    ],
-    "sound": "s.wegothim"
-  },
-  "dontgetit": {
-    "aliases": [
-      "don'tgetit",
-      "idontgetit",
-      "idon'tgetit"
-    ],
-    "sound": "s.dontgetit"
-  },
-  "nope": {
-    "aliases": [
-      "no",
-      "koronenope",
-      "koroneno"
-    ],
-    "sound": "s.nope"
-  },
-  "yes": {
-    "aliases": [
-      "myes",
-      "mmyes",
-      "mmmyes",
-      "koroneyes"
-    ],
-    "sound": "s.yes"
-  },
-  "sure": {
-    "aliases": [
-      "koronesure"
-    ],
-    "sound": "s.sure"
-  },
-  "impostor": {
-    "aliases": [
-      "sus",
-      "amongus",
-      "impostoramongus"
-    ],
-    "sound": "s.impostor"
-  },
-  "whymad": {
-    "aliases": [
-      "mad",
-      "whyyouhavetobemad",
-      "whyyoumad"
-    ],
-    "sound": "s.whymad"
-  },
-  "isonlygame": {
-    "aliases": [
-      "onlygame",
-      "game",
-      "isonlygamewhymad"
-    ],
-    "sound": "s.isonlygame"
-  },
-  "wrong": {
-    "aliases": [
-      "you'rewrong",
-      "yourewrong",
-      "yourwrong"
-    ],
-    "sound": "s.wrong"
-  },
-  "wrongandugly": {
-    "aliases": [
-      "wrong&ugly",
-      "ugly",
-      "you'rewrongandugly",
-      "yourewrongandugly",
-      "yourwrongandugly"
-    ],
-    "sound": "s.wrong.andugly"
-  },
-  "gottabounce": {
-    "aliases": [
-      "anywaysmybroskis",
-      "anywaymybroskis",
-      "anywaysbroskis",
-      "anywaybroskis",
-      "igottabounce",
-      "bounce"
-    ],
-    "sound": "s.gottabounce"
-  },
-  "fbiopenup": {
-    "aliases": [
-      "fbi",
-      "openup"
-    ],
-    "sound": "s.fbiopenup"
-  },
-  "yabe": {
-    "aliases": [
-      "ya-be"
-    ],
-    "sound": "s.yabe"
-  },
-  "congration": {
-    "aliases": [
-      "congratulation"
-    ],
-    "sound": "s.congration"
-  },
-  "stfuamericans": {
-    "aliases": [
-      "americans",
-      "american",
-      "stfu"
-    ],
-    "sound": "s.stfuamericans"
-  },
-  "die": {
-    "sound": "s.die"
-  },
-  "youaredie": {
-    "sound": "s.youaredie"
-  },
-  "bonk": {
-    "sound": "s.bonk"
-  },
-  "f": {
-    "sound": "s.f"
-  },
-  "bruh": {
-    "aliases": [
-      "bruh2"
-    ],
-    "sound": "s.bruh"
-  },
-  "laugh": {
-    "aliases": [
-      "laughtrack",
-      "laughter",
-      "funny",
-      "funy"
-    ],
-    "sound": "s.laugh"
-  },
-  "what": {
-    "aliases": [
-      "what?",
-      "wtf",
-      "wtf?",
-      "what-wtf"
-    ],
-    "sound": "s.what"
-  },
-  "cyberpunk": {
-    "aliases": [
-      "cum",
-      "cyberpunk2077",
-      "2077"
-    ],
-    "sound": "s.cyberpunk"
-  },
-  "ultrainstinct": {
-    "aliases": [
-      "dbz",
-      "ultra-instinct",
-      "ultrainstincttheme"
-    ],
-    "sound": "s.ultrainstinct"
-  }
+    "version": 1,
+    "commands": [
+        {
+            "name": "wow",
+            "sound": "s.wow"
+        },
+        {
+            "name": "awman",
+            "sound": "s.revenge.awman"
+        },
+        {
+            "name": "survival",
+            "sound": "s.survival"
+        },
+        {
+            "name": "nice",
+            "sound": "s.nice"
+        },
+        {
+            "name": "bitesthedust",
+            "sound": "s.bitesthedust"
+        },
+        {
+            "name": "word",
+            "sound": "s.word"
+        },
+        {
+            "name": "vsauce",
+            "choices": [
+                {
+                    "name": "short",
+                    "sound": "s.vsauce",
+                    "default": true
+                },
+                {
+                    "name": "extended",
+                    "sound": "s.vsauce.extended"
+                }
+            ]
+        },
+        {
+            "name": "wait",
+            "sound": "s.uhoh.wait"
+        },
+        {
+            "name": "uhoh",
+            "sound": "s.uhoh.uhoh"
+        },
+        {
+            "name": "how",
+            "sound": "s.how"
+        },
+        {
+            "name": "wegothim",
+            "sound": "s.wegothim"
+        },
+        {
+            "name": "dontgetit",
+            "sound": "s.dontgetit"
+        },
+        {
+            "name": "impostor",
+            "sound": "s.impostor"
+        },
+        {
+            "name": "whymad",
+            "sound": "s.whymad"
+        },
+        {
+            "name": "isonlygame",
+            "sound": "s.isonlygame"
+        },
+        {
+            "name": "wrong",
+            "sound": "s.wrong"
+        },
+        {
+            "name": "wrongandugly",
+            "sound": "s.wrong.andugly"
+        },
+        {
+            "name": "gottabounce",
+            "sound": "s.gottabounce"
+        },
+        {
+            "name": "fbiopenup",
+            "sound": "s.fbiopenup"
+        },
+        {
+            "name": "congration",
+            "sound": "s.congration"
+        },
+        {
+            "name": "stfuamericans",
+            "sound": "s.stfuamericans"
+        },
+        {
+            "name": "bonk",
+            "sound": "s.bonk"
+        },
+        {
+            "name": "bruh",
+            "sound": "s.bruh"
+        },
+        {
+            "name": "laugh",
+            "sound": "s.laugh"
+        },
+        {
+            "name": "what",
+            "sound": "s.what"
+        },
+        {
+            "name": "cyberpunk",
+            "sound": "s.cyberpunk"
+        },
+        {
+            "name": "ultrainstinct",
+            "sound": "s.ultrainstinct"
+        },
+        {
+            "name": "s",
+            "subcommands": [
+                {
+                    "name": "death",
+                    "sound": "s.death"
+                },
+                {
+                    "name": "doit",
+                    "sound": "s.doit"
+                },
+                {
+                    "name": "vergeofgreatness",
+                    "sound": "s.vergeofgreatness"
+                },
+                {
+                    "name": "toofar",
+                    "sound": "s.toofar"
+                }
+            ]
+        },
+        {
+            "name": "h",
+            "subcommands": [
+                {
+                    "name": "a",
+                    "sound": "s.a"
+                },
+                {
+                    "name": "guh",
+                    "sound": "s.guh"
+                },
+                {
+                    "name": "hic",
+                    "sound": "s.hic"
+                },
+                {
+                    "name": "iapprove",
+                    "sound": "s.iapprove"
+                },
+                {
+                    "name": "imhorny",
+                    "sound": "s.imhorny"
+                },
+                {
+                    "name": "yabe",
+                    "sound": "s.yabe"
+                }
+            ]
+        },
+        {
+            "name": "k",
+            "subcommands": [
+                {
+                    "name": "ohimdie",
+                    "sound": "s.ohimdie"
+                },
+                {
+                    "name": "nope",
+                    "sound": "s.nope"
+                },
+                {
+                    "name": "yes",
+                    "sound": "s.yes"
+                },
+                {
+                    "name": "sure",
+                    "sound": "s.sure"
+                },
+                {
+                    "name": "die",
+                    "sound": "s.die"
+                },
+                {
+                    "name": "youaredie",
+                    "sound": "s.youaredie"
+                },
+                {
+                    "name": "f",
+                    "sound": "s.f"
+                }
+            ]
+        }
+    ]
 }
