@@ -374,6 +374,23 @@
             "files": [
                 "audio/music/ultra-instinct-theme.opus"
             ]
+        },
+        {
+            "name": "s.ogey",
+            "files": [
+                {
+                    "filenames": [
+                        "audio/holo/ogey.opus"
+                    ],
+                    "weight": 4
+                },
+                {
+                    "filenames": [
+                        "audio/holo/ogeyrrat.opus"
+                    ],
+                    "weight": 1
+                }
+            ]
         }
     ]
 }

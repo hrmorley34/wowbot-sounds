@@ -166,6 +166,10 @@
                 {
                     "name": "yabe",
                     "sound": "s.yabe"
+                },
+                {
+                    "name": "ogey",
+                    "sound": "s.ogey"
                 }
             ]
         },
