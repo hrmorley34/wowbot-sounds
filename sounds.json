@@ -391,6 +391,12 @@
                     "weight": 1
                 }
             ]
+        },
+        {
+            "name": "s.bsdayo",
+            "files": [
+                "audio/bsdayo.opus"
+            ]
         }
     ]
 }

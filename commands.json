@@ -205,6 +205,10 @@
                     "sound": "s.f"
                 }
             ]
+        },
+        {
+            "name": "bs",
+            "sound": "s.bsdayo"
         }
     ]
 }
